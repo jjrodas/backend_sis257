@@ -14,8 +14,8 @@ async function bootstrap() {
   const config = new DocumentBuilder()
     .setTitle('SIS257')
     .setDescription('API de la materia Desarrollo Aplicación INT/Internet II')
-    .setVersion('1.0')
-    .addTag('interpretes')
+    .setVersion('1.1')
+    .addTag('interpretes, genero, cancion, album, usuario')
     .addBearerAuth({ type: 'http', scheme: 'bearer', bearerFormat: 'JWT', in: 'header' })
     .build();
   const document = SwaggerModule.createDocument(app, config);
